@@ -1,21 +1,48 @@
 body {
 	background-color: rgba(255,0,0,.8);
-
 }
 
 /******** NAVIGATION *********/
 
-
-.nav {
-  display:table;
-}
-.nav > li{
-  width: auto;
-  display:table-cell;
-}
-
-nav {
+.navbar {
+	margin-bottom: 0;
 	background-color: rgba(230,230,230, .3);
+	border-bottom: 2px solid white;
+}
+
+.navbar .nav {
+    margin: 0;
+    display: table;
+    width: 100%;
+}
+
+.navbar .nav > li {
+    display: table-cell;
+    width: 1%;
+    float: none;
+    text-align: center;
+    font-size: 1.75rem;
+    font-family: 'Baloo Bhaina', cursive;
+   	border: 1px solid black;
+   	box-shadow: 2px 2px slategrey;
+   	border-radius: 5%;
+ }
+
+ .navbar .nav li > a {
+ 	color: rgba(0,0,0, .61);
+ 	padding-left: 100px;
+ 	padding-right: 100px;
+ }
+
+/* CENTERING BOOTSTRAP NAV*/
+.navbar .nav li:first-child a {
+    border-left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.navbar .nav li:last-child a {
+    border-right: 0;
+    border-radius: 0 3px 3px 0;
 }
 
 /******** NAME BANNER *********/
@@ -33,7 +60,7 @@ nav {
 	height: 130px;
 	background: linear-gradient(to top, rgba(0, 0, 0, .01), rgba(230,230,230, .3));
 	width: 100%;
-	margin-top: 0;
+	padding-top: 3%;
 }
 
 .work {
@@ -49,14 +76,13 @@ nav {
 	height: 50px;
 }
 
-}/******** MY PICTURE AND ABOUT ME *********/
+/******** MY PICTURE AND ABOUT ME *********/
 
-.blurb-container {
+.blurb {
 	margin-top: 5%;
-
 }
 
-.blurb-container > p {
+.blurb > p {
 	line-height: 3rem;
 	text-align: justify;
 	padding-right: 10%;
@@ -64,6 +90,16 @@ nav {
  	padding-top: 5%;
  	font-size: 1.75rem;
 	font-family: 'Baloo Bhaina', cursive;
-	color: rgba(0,0,0, .8);
+	color: white;
 }
+
+.blurb-container {
+	background-color: rgba(0,0,0,.8);
+	padding: 6%;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+
+
 
