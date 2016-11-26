@@ -40,6 +40,7 @@ body {
 	margin-bottom: 0;
 	background: rgba(0,0,0, .5);
 	border: none;
+/*	height: 80px;*/
 }
 
 .invisible {
@@ -49,6 +50,12 @@ body {
 	visibility: hidden;
 }
 
+/*#mynavs li > a {
+	height: 80px;
+	padding-top: 32px;
+	width: 100px;
+}
+*/
 /******** MY PICTURE AND ABOUT ME ********/
 
 
@@ -61,7 +68,13 @@ body {
 }
 
 .blurb-container {
-	background: rgba(0,0,0,.6);
+	  background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(255, 0, 0, 0.45), 
+      rgba(255, 0, 0, 0.45)
+    ), center/100% no-repeat
+    url(https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/524088_10200855978591040_90608577_n.jpg?oh=bfff8f095451576d65f1232fdffda436&oe=58FCE9DE);
 	padding: 5% 2% 2% 2%;
 }
  
@@ -72,8 +85,10 @@ body {
 /*********** FOOTER **************/
 
 .social-footer {
-	height: 80px;
-	background-color: rgba(0,0,0,.6);
-	margin-top: 20px;
-	padding-top: 10px;
+	background: rgba(0,0,0, .5);
+	padding: 1%;
+}
+
+.social-footer > a {
+	padding: 10%;
 }
