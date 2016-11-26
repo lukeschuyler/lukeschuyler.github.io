@@ -1,0 +1,103 @@
+body {
+	background: rgba(255,0,0, .43);
+	margin: 0;
+	position: absolute;
+/*	font-family: 'Baloo Bhaina', cursive;*/
+}
+
+
+/******** NAME BANNER /**********/
+
+.name {
+	text-align: center;
+	font-family: 'Baloo Bhaina', cursive;
+	font-size: 60px;
+	letter-spacing: 1.1rem;
+	text-shadow: 4px 4px rgba(0,0,0,.2);
+	color: rgba(0,0,0, .61);
+}
+
+.banner {
+/*	background: rgba(255,255,255,.8);*/
+	padding-top: 2%;
+	 background: 
+    linear-gradient(
+      rgba(255, 0, 0, 0.55), 
+      rgba(255, 0, 0, 0.55)
+    ), center/100% no-repeat fixed
+    url(https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/524088_10200855978591040_90608577_n.jpg?oh=bfff8f095451576d65f1232fdffda436&oe=58FCE9DE);
+}
+
+.work {
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Baloo Bhaina', cursive;
+	letter-spacing: 1.1rem;
+	color: rgba(0,0,0, .61);
+	text-shadow: 4px 4px rgba(0,0,0,.15);
+}
+
+.break1 {
+	height: 50px;
+}
+
+
+/*NAVIGATION*/
+
+.navbar {
+	margin-bottom: 0;
+	background: rgba(0,0,0, .7);
+	border: none;
+/*	height: 80px;*/
+}
+
+.invisible {
+	margin-bottom: 0;
+	background: rgba(0,0,0, .5);
+	border: none;
+	visibility: hidden;
+}
+
+#mynavs li > a {
+	font-size: 1.91rem;
+	letter-spacing: .35rem;
+}
+
+
+/******** MY PICTURE AND ABOUT ME ********/
+
+
+.blurb > p {
+	line-height: 4rem;
+	text-align: justify;
+ 	font-size: 1.9rem;
+	font-family: 'Baloo Bhaina', cursive;
+	color: rgba(255,255,255, .8);
+}
+
+.blurb-container {
+	  background: 
+    linear-gradient(
+      rgba(255, 0, 0, 0.55), 
+      rgba(255, 0, 0, 0.55)
+    ), center/100% no-repeat fixed
+    url(https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/524088_10200855978591040_90608577_n.jpg?oh=bfff8f095451576d65f1232fdffda436&oe=58FCE9DE);
+	padding: 5% 2% 2% 2%;
+}
+ 
+.pic-conatiner {
+	width: 100%;
+}
+
+
+
+/*********** FOOTER **************/
+
+.social-footer {
+	background: rgba(0,0,0, .8);
+	padding: 1%;
+}
+
+.social-footer > a {
+	padding: 10%;
+}
