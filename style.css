@@ -1,7 +1,8 @@
 body {
-	background: rgba(255,0,0, .8);
+	background: rgba(255,0,0, .43);
 	margin: 0;
 	position: absolute;
+/*	font-family: 'Baloo Bhaina', cursive;*/
 }
 
 
@@ -17,7 +18,14 @@ body {
 }
 
 .banner {
-	background: rgba(255,255,255,.8);
+/*	background: rgba(255,255,255,.8);*/
+	padding-top: 2%;
+	 background: 
+    linear-gradient(
+      rgba(255, 0, 0, 0.55), 
+      rgba(255, 0, 0, 0.55)
+    ), center/100% no-repeat fixed
+    url(https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/524088_10200855978591040_90608577_n.jpg?oh=bfff8f095451576d65f1232fdffda436&oe=58FCE9DE);
 }
 
 .work {
@@ -38,7 +46,7 @@ body {
 
 .navbar {
 	margin-bottom: 0;
-	background: rgba(0,0,0, .5);
+	background: rgba(0,0,0, .7);
 	border: none;
 /*	height: 80px;*/
 }
@@ -50,12 +58,12 @@ body {
 	visibility: hidden;
 }
 
-/*#mynavs li > a {
-	height: 80px;
-	padding-top: 32px;
-	width: 100px;
+#mynavs li > a {
+	font-size: 1.91rem;
+	letter-spacing: .35rem;
 }
-*/
+
+
 /******** MY PICTURE AND ABOUT ME ********/
 
 
@@ -86,7 +94,7 @@ body {
 /*********** FOOTER **************/
 
 .social-footer {
-	background: rgba(0,0,0, .5);
+	background: rgba(0,0,0, .8);
 	padding: 1%;
 }
 
