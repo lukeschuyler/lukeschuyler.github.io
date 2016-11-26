@@ -1,5 +1,5 @@
 body {
-	background-color: rgba(255, 0, 0,.8); 
+	background: rgba(255,0,0, .8);
 	margin: 0;
 	position: absolute;
 }
@@ -62,18 +62,17 @@ body {
 .blurb > p {
 	line-height: 4rem;
 	text-align: justify;
- 	font-size: 1.75rem;
+ 	font-size: 1.9rem;
 	font-family: 'Baloo Bhaina', cursive;
 	color: rgba(255,255,255, .8);
 }
 
 .blurb-container {
 	  background: 
-    /* top, transparent red, faked with gradient */ 
     linear-gradient(
-      rgba(255, 0, 0, 0.45), 
-      rgba(255, 0, 0, 0.45)
-    ), center/100% no-repeat
+      rgba(255, 0, 0, 0.55), 
+      rgba(255, 0, 0, 0.55)
+    ), center/100% no-repeat fixed
     url(https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/524088_10200855978591040_90608577_n.jpg?oh=bfff8f095451576d65f1232fdffda436&oe=58FCE9DE);
 	padding: 5% 2% 2% 2%;
 }
@@ -81,6 +80,8 @@ body {
 .pic-conatiner {
 	width: 100%;
 }
+
+
 
 /*********** FOOTER **************/
 
