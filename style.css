@@ -6,7 +6,7 @@ body {
     ), center/cover no-repeat fixed
     url(https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/524088_10200855978591040_90608577_n.jpg?oh=bfff8f095451576d65f1232fdffda436&oe=58FCE9DE);
 	margin: 0;
-	padding-top: 50px;
+	padding: 50px 0 100px;
 /*	position: absolute;*/
 /*	font-family: 'Baloo Bhaina', cursive;*/
 }
@@ -28,20 +28,10 @@ body {
 	display: none;
 }
 
-.name-invisible {
-	text-align: center;
-	font-family: 'Baloo Bhaina', cursive;
-	font-size: 60px;
-	letter-spacing: 1.1rem;
-	text-shadow: 4px 4px rgba(0,0,0,.2);
-	color: rgba(0,0,0, .61);
-	visibility: hidden;
-	position: fixed;
-}
+
 
 .banner {
-/*	background: rgba(255,255,255,.8);*/
-	padding-top: 5%;
+	padding-top: 3%;
 }
 
 .work {
@@ -94,12 +84,18 @@ body {
 .blurb-container {
 	padding: 5% 2% 2% 2%;
 	min-height: 100%;
+/*	border: 10px solid rgba(0,0,0,.5);*/
+	border-radius: 10%;
 }
 
+.mepic {
+	border-radius: 12%;
 
+}
  
 .pic-conatiner {
 	width: 100%;
+
 }
 
 
@@ -109,9 +105,33 @@ body {
 .social-footer {
 	background: rgba(0,0,0,.2);
 	padding: 1%;
+	margin-top: 5%;
 }
 
 .social-footer > a {
 	padding: 5%;
 }
 
+@media (min-width: 375px) and (max-width: 767px) {
+	body {
+		padding-top: 180px;
+	}
+}
+
+/*@media (max-width: 991px) {
+	.mepic {
+		min-height: 400px;
+	}
+}
+
+@media (max-width: 700px) {
+	.mepic {
+		min-width: 400px;
+	}
+}
+*/
+@media (max-width: 550px) {
+	.blurb > p {
+		text-align: center;
+	}
+}
