@@ -4,20 +4,18 @@
 	<title>Luke Schuyler</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="style.css">	
-		<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|El+Messiri|Frijole|Maven+Pro" rel="stylesheet">
 </head>
 
 <body>
-		<nav class="navbar navbar-default navbar-fixed-top">
-		  <div class="container-fluid nav-cont">
-		    	<ul class="nav navbar-nav" id="mynavs">
-		          <li class="active"><a href="#">Home</a></li>
-		          <li><a href="about.html">About</a></li>
-		          <li><a href="contact.html">Contact</a></li>
-		          <li><a href="works.html">Work</a></li>
+		  <div class="container-fluid">
+		    	<ul id="mynavs" class="row">
+		          <li class="active col-md-2 col-md-offset-2"><a id="index" href="#">Home</a></li>
+		          <li class="col-md-2"><a id="about" href="#">About</a></li>
+		          <li class="col-md-2"><a id="contact" href="#">Contact</a></li>
+		          <li class="col-md-2"><a id="work" href="#">Work</a></li>
 		        </ul>
 		  </div>
-		</nav>
 
 			<div class="container-fluid banner">
 				<div class="row  name-container">
@@ -27,33 +25,51 @@
 				</div>
 				
 				<div class="row">
-					<div class="col-md-12 col-sm-24 col-xs-36 work">Web Developer | Musician | Artist</div>
+					<div class="col-md-12 col-sm-24 col-xs-36 work"><span id="work1" class="work-spans">Web Developer </span><span id="work2" class="work-spans">| Musician </span> <span id="work3" class="work-spans">| Artist</span></div>
 				</div>
 				
 			</div>
 					
 			<div class="container-fluid pic-container">
 				<div class="row blurb-container">
-
-					<img class= "col-md-5 col-sm-6 col-xs-12 mepic" src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/11200874_10204545045495407_8566812377740472419_n.jpg?oh=79a2077bdff40d88afb7aa9bf6d68f65&oe=58AEAA9C">
+					<!-- <div id="imageMe"></div> -->
 					<div class="col-lg-7 col-md-7 col-sm-6 col-xs-12 centered">
 						<div class= "blurb">
 							<p>Hello all, welcome to my site. Luke Schuyler here. It's technically pronounced Luke SKY-ler, most of the time accidentally pronounced Luke SHOO-ler, but most preferably pronounced Luke Skywalker. I am a native of Nashville, TN, and received a bachelor's degree in Music Business at Belmont University. My current work is a constant pendulum swinging between Web Development and Music. As are all areas of work and study, they both carry a consistent flow of growth, and everyday I find opportunity to learn is a good day.</p>
 						</div>	
 					</div>
+					<img class= "col-md-4 col-sm-6 col-xs-12 col-md-offset-1 mepic" src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/11200874_10204545045495407_8566812377740472419_n.jpg?oh=79a2077bdff40d88afb7aa9bf6d68f65&oe=58AEAA9C">
+				</div>
+			
+			</div>
+
+			<div class="container-fluid pic-container2">
+				<div class="row blurb-container">
+					<!-- <div id="imageMe"></div> -->
+					<div class="col-lg-7 col-md-7 col-sm-6 col-xs-12 centered">
+						<div class= "blurb">
+							<p>Hello all, welcome to my site. Luke Schuyler here. It's technically pronounced Luke SKY-ler, most of the time accidentally pronounced Luke SHOO-ler, but most preferably pronounced Luke Skywalker. I am a native of Nashville, TN, and received a bachelor's degree in Music Business at Belmont University. My current work is a constant pendulum swinging between Web Development and Music. As are all areas of work and study, they both carry a consistent flow of growth, and everyday I find opportunity to learn is a good day.</p>
+						</div>	
+					</div>
+					<img class= "col-md-4 col-sm-6 col-xs-12 col-md-offset-1 mepic" src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/11200874_10204545045495407_8566812377740472419_n.jpg?oh=79a2077bdff40d88afb7aa9bf6d68f65&oe=58AEAA9C">
 				</div>
 			
 			</div>
 
 		
-	<div class="container-fluid">
-		<div class="row social-footer navbar-fixed-bottom">
-			<div class="col-md-2 col-sm-2 col-xs-2"></div>
-			<div class="col-md-2 col-sm-2 col-xs-2"><a href="https://www.facebook.com/shlocks"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_square-64.png"></a></div>
-			<div class="col-md-2 col-sm-2 col-xs-2"><a href="linkedin.com"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_color-64.png"></a></div>
-			<div class="col-md-2 col-sm-2 col-xs-2"><a href="https://www.instagram.com/lukeschuywalker"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/instagram_circle_color-64.png"></a></div>
-			<div class="col-md-2 col-sm-2 col-xs-2"><a href="https://github.com/lukeschuyler"><img src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Github-64.png"></a></div>
-			<div class="col-md-2 col-sm-2 col-xs-2"></div>
+	<div class="navbar-fixed-bottom social-footer container-fluid">
+		<div class="row">
+			<div class="col-md-4 col-md-offset-4 social-header">
+				Copyright @ Luke Schuyler 2016
+			</div>
+		</div>
+		<div id="social-footer" class="row">
+			<div class="col-md-4 col-sm-2 col-xs-2"></div>
+			<div class="col-md-1 col-sm-2 col-xs-2"><a class="s-icons" href="https://www.facebook.com/shlocks"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_square-64.png"></a></div>
+			<div class="col-md-1 col-sm-2 col-xs-2"><a class="s-icons" href="linkedin.com"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_color-64.png"></a></div>
+			<div class="col-md-1 col-sm-2 col-xs-2"><a class="s-icons" href="https://www.instagram.com/lukeschuywalker"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/instagram_circle_color-64.png"></a></div>
+			<div class="col-md-1 col-sm-2 col-xs-2"><a class="s-icons" href="https://github.com/lukeschuyler"><img src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Github-64.png"></a></div>
+			<div class="col-md-3 col-sm-2 col-xs-2"></div>
 		</div>
 	</div>
 
