@@ -1,4 +1,8 @@
 body {
+	background: rgba(0,0,0, .8)
+}
+
+#main {
 	 background: 
     linear-gradient(
       rgba(50, 70, 70, 0.55), 
@@ -21,10 +25,6 @@ body {
 	text-shadow: 4px 4px 10px rgba(200,200,200, .5);
 	color: rgba(0,0,0, .75);
 
-}
-
-.name-fade {
-	display: none;
 }
 
 .banner {
@@ -59,7 +59,6 @@ body {
 	font-size: 1.91rem;
 	height:80px;
 	padding: 12%;
-	border: 1px solid black;
 	border-radius: 100%;
 	box-shadow: 4px 4px 20px 4px rgba(200,200,200, .9);
 	background: rgba(34,76,98,.7);
@@ -78,7 +77,6 @@ body {
 
 #mynavs li > a:active {
 	background: rgba(0,0,0, .01);
-
 	text-decoration: none;
 }
 
