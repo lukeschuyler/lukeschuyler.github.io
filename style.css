@@ -13,11 +13,16 @@ body {
 	text-align: center;
 }
 
+#floyd {
+	
+}
+
 .picture {
+	/*margin-left: 5%;*/
 	margin-bottom: 3%;
 	border-radius: 45%;
-	height: 350px;
-	width: 370px;
+	height: 270px;
+	width: 350px;
 	background: 
     linear-gradient( 
       rgba(75, 255, 255, 0.15), 
@@ -101,7 +106,7 @@ a:hover: {
 }
 
 #star {
-	height: 20px;
-	width: 20px;
+	height: 00px;
+	width: 00px;
 	border-radius: 50%;
 }

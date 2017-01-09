@@ -8,9 +8,9 @@ function hideAll (view) {
 };
 
 $('#about').hide();
-	$('#music').hide();
-	$('#work').hide();
-	$('#contact').hide();
+$('#music').hide();
+$('#work').hide();
+$('#contact').hide();
 
 $('a').click(function(e) {
 	e.preventDefault();
@@ -19,6 +19,20 @@ $('a').click(function(e) {
 	$(this).addClass('selected');
 	$(this).siblings().removeClass('selected');
 });
+
+$('.links').click(function() {
+	if ($(this).hasClass('home') === false) {
+		$('.picture').addClass('zoomOutUp');
+	setTimeout(function() {
+		$('.pic-container').hide('slow');
+	}, 1000)
+	} else {
+		$('.pic-container').show();
+		$('.picture').removeClass('zoomOutUp');
+		$('.picture').addClass('zoomInDown');
+	}
+
+})
 
 $('.links').mouseover(function(e) {
 	$(this).addClass('pulse');
