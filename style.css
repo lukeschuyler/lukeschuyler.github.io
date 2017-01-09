@@ -1,137 +1,99 @@
 body {
-	 background: 
-    linear-gradient(
-      rgba(255, 0, 0, 0.55), 
-      rgba(255, 0, 0, 0.55)
+	padding-top: 40px;
+	background: 
+    radial-gradient( 
+      rgba(255, 225, 225, 0.85), 
+      rgba(255, 225, 225, 0.49)
     ), center/cover no-repeat fixed
     url(https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/524088_10200855978591040_90608577_n.jpg?oh=bfff8f095451576d65f1232fdffda436&oe=58FCE9DE);
-	margin: 0;
-	padding: 50px 0 100px;
-/*	position: absolute;*/
-/*	font-family: 'Baloo Bhaina', cursive;*/
+    font-family: 'Quattrocento Sans', sans-serif;
 }
 
-
-/******** NAME BANNER /**********/
-
-.name {
+#center {
 	text-align: center;
-	font-family: 'Baloo Bhaina', cursive;
-	font-size: 60px;
-	letter-spacing: 1.1rem;
-	text-shadow: 4px 4px rgba(0,0,0,.2);
-	color: rgba(0,0,0, .61);
-
 }
 
-.name-fade {
-	display: none;
+.picture {
+	margin-bottom: 5%;
+	border-radius: 45%;
+	height: 350px;
+	width: 370px;
+	background: 
+    linear-gradient( 
+      rgba(75, 255, 255, 0.15), 
+      rgba(75, 255, 255, 0.19)
+    ), center/cover no-repeat
+    url("http://www167.lunapic.com/do-not-link-here-use-hosting-instead/148396596728218?8736757003");
 }
 
-
-
-.banner {
-	padding-top: 3%;
+.main {
+	height: 150vh;
+	background: radial-gradient( 
+      rgba(, 255, 255, 0.95), 
+      rgba(, 255, 255, 0.19));
 }
 
-.work {
+#mynavs {
+	margin-top: 5%;
+	height: 40px;
 	text-align: center;
-	font-size: 30px;
-	font-family: 'Baloo Bhaina', cursive;
-	letter-spacing: 1.1rem;
-	color: rgba(0,0,0, .61);
-	text-shadow: 4px 4px rgba(0,0,0,.15);
-}
-
-.break1 {
-	height: 50px;
-}
-
-
-/*NAVIGATION*/
-
-.navbar {
-	margin-bottom: 0;
-	background: rgba(0,0,0, .7);
-	border: none;
-/*	height: 80px;*/
-}
-
-.invisible {
-	margin-bottom: 0;
-	background: rgba(0,0,0, .5);
-	border: none;
-	visibility: hidden;
+	font-family: 'Patrick Hand', cursive;
 }
 
 #mynavs li > a {
-	font-size: 1.91rem;
-	letter-spacing: .35rem;
+	text-align: center;
+	text-decoration: none;
 }
 
-
-/******** MY PICTURE AND ABOUT ME ********/
-
-
-.blurb > p {
-	line-height: 4rem;
-	text-align: justify;
- 	font-size: 1.9rem;
-	font-family: 'Baloo Bhaina', cursive;
-	color: rgba(255,255,255, .8);
+#mynavs li {
+	padding-right: 13%;
+	display: inline;
+	list-style: none;
+	font-size: 20px;
+	text-decoration: none;
+	height: 65px;
 }
 
-.blurb-container {
-	padding: 5% 2% 2% 2%;
-	min-height: 100%;
-/*	border: 10px solid rgba(0,0,0,.5);*/
-	border-radius: 10%;
+.name {
+	font-family: 'Patrick Hand', cursive;
+	font-size: 24px;
+	color: rgba(0,0,0,.5);
+	margin-right: 1.5%;
 }
 
-.mepic {
-	border-radius: 12%;
-
-}
- 
-.pic-conatiner {
-	width: 100%;
-
+.under-name {
+	font-family: 'Patrick Hand', cursive;
+	font-size: 20px;
+	color: rgba(0,0,0,.5);
+	margin-right: 1.5%;
 }
 
+#mynavs li > a:active {
+	color: rgba(100,0,0,.7);
+}
 
+a:link {
+	color: rgba(0,0,0,.7);
+	text-align: center;
+}
 
-/*********** FOOTER **************/
+a:hover: {
+	color: rgba(0,0,0,.3);
+}
+
+#content div div > p {
+	background: rgba(255,255,255, .3);
+	font-size: 17px;
+	padding: 7%;
+	line-height: 30px;
+	border-radius: 25px;
+}
 
 .social-footer {
-	background: rgba(0,0,0,.2);
-	padding: 1%;
-	margin-top: 5%;
+	margin-top: 30px;
 }
-
-.social-footer > a {
-	padding: 5%;
-}
-
-@media (min-width: 375px) and (max-width: 767px) {
-	body {
-		padding-top: 180px;
-	}
-}
-
-/*@media (max-width: 991px) {
-	.mepic {
-		min-height: 400px;
-	}
-}
-
-@media (max-width: 700px) {
-	.mepic {
-		min-width: 400px;
-	}
-}
-*/
-@media (max-width: 550px) {
-	.blurb > p {
-		text-align: center;
-	}
+.copyright {
+	text-align: center;
+    font-family: 'Quattrocento Sans', sans-serif;
+    margin-top: 30px;
 }
