@@ -1,16 +1,15 @@
 body {
-	background: rgba(0,0,0, .8)
+	background: rgba(10, 15, 42, .9);
 }
 
 #main {
 	 background: 
     linear-gradient(
-      rgba(50, 70, 70, 0.55), 
-      rgba(50, 70, 70, 0.55)
+      rgba(50, 70, 70, 0.35), 
+      rgba(50, 70, 70, 0.35)
     ), center/cover no-repeat fixed
     url(https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/524088_10200855978591040_90608577_n.jpg?oh=bfff8f095451576d65f1232fdffda436&oe=58FCE9DE);
-	margin-top: 60px;
-	margin-bottom: 170px;
+	margin-top: 40px;
 	font-family: 'Maven Pro', sans-serif;
 }
 
@@ -22,9 +21,8 @@ body {
 	font-family: 'Baloo Bhaina', cursive;
 	font-size: 60px;
 	letter-spacing: 1.1rem;
-	text-shadow: 4px 4px 10px rgba(200,200,200, .5);
+	text-shadow: 10px 10px 20px rgba(200,200,200, .5);
 	color: rgba(0,0,0, .75);
-
 }
 
 .banner {
@@ -59,10 +57,10 @@ body {
 	font-size: 1.91rem;
 	height:80px;
 	padding: 12%;
-	border-radius: 100%;
+	/*border-radius: 100%;*/
 	box-shadow: 4px 4px 20px 4px rgba(200,200,200, .9);
 	background: rgba(34,76,98,.7);
-	color: rgb(108, 227, 190);
+	color: rgba(255,255,255,.8);
 }
 
 #mynavs li {
@@ -70,15 +68,11 @@ body {
 }
 
 #mynavs li > a:hover {
-	background: rgba(0,0,0, .2);
+	background: rgba(100,100,100, .2);
 	text-decoration: none;
 	box-shadow: 8px 8px 20px 10px rgba(200,0,0, .1);
 }
 
-#mynavs li > a:active {
-	background: rgba(0,0,0, .01);
-	text-decoration: none;
-}
 
 /******** MY PICTURE AND ABOUT ME ********/
 
@@ -93,7 +87,7 @@ body {
 
 .blurb {
 	padding: 2%;
-	background: rgba(0,0,0,.4)
+	background: rgba(10, 15, 48, .7);
 }
 
 .blurb-container {
