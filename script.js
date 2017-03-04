@@ -7,31 +7,44 @@ function hideAll (view) {
 	$(view).show();
 };
 
+$.ajax({
+	url: 'http://quotes.rest/qod.json?category=inspire'
+}).done(function(data) {
+	console.log(data)
+	$('#quote').prepend(data.contents.quotes[0].quote +  '<br> - ' + data.contents.quotes[0].author + '<br>' )
+})
+
+$('.workLink').click(function(e) {
+	e.preventDefault()
+	window.open(this.href)
+})
+
 $('#about').hide();
 $('#music').hide();
 $('#work').hide();
 $('#contact').hide();
 
 $('a').click(function(e) {
-	e.preventDefault();
-	console.log(this)
-	console.log($(this).siblings())
-	$(this).addClass('selected');
-	$(this).siblings().removeClass('selected');
+	if (e.target.classList[2] === 'links') {
+		e.preventDefault();
+		$(this).addClass('selected');
+		$(this).siblings().removeClass('selected');
+	}
 });
 
 $('.links').click(function() {
 	if ($(this).hasClass('home') === false) {
-		$('.picture').addClass('zoomOutUp');
-	setTimeout(function() {
-		$('.pic-container').hide('slow');
-	}, 1000)
+		if ($('.picture').hasClass('zoomOutUp') === false) {
+			$('.picture').addClass('zoomOutUp');
+		setTimeout(function() {
+			$('.pic-container').hide('slow');
+		}, 1000)
+		}
 	} else {
-		$('.pic-container').show();
+		$('.pic-container').show('slow');
 		$('.picture').removeClass('zoomOutUp');
 		$('.picture').addClass('zoomInDown');
 	}
-
 })
 
 $('.links').mouseover(function(e) {
@@ -52,7 +65,6 @@ $('.icons').mouseleave(function(e) {
 
 $('.home').click(function() {
 	hideAll($('#front'));
-	// $('#front').show();
 });
 
 $('.about').click(function() {
@@ -65,4 +77,4 @@ $('.work').click(function() {
 
 $('.contact').click(function() {
 	hideAll($('#contact'));
-})
+});
