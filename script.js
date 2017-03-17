@@ -1,80 +1,106 @@
-function hideAll (view) {
-	$('#about').hide();
-	$('#music').hide();
-	$('#work').hide();
-	$('#contact').hide();
-	$('#front').hide();
-	$(view).show();
-};
+const mySite = angular.module('mySite', ['ngRoute'])
 
-$.ajax({
-	url: 'http://quotes.rest/qod.json?category=inspire'
-}).done(function(data) {
-	console.log(data)
-	$('#quote').prepend(data.contents.quotes[0].quote +  '<br> - ' + data.contents.quotes[0].author + '<br>' )
+mySite.config(function($routeProvider, $locationProvider) {
+	$locationProvider.hashPrefix('');
+
+	$routeProvider
+		.when('/', {
+			templateUrl : 'partials/home.html',
+			controller : 'HomeCtrl'
+		})
+		.when('/about', {
+			templateUrl : 'partials/about.html',
+			controller : 'AboutCtrl'
+		})
+		.when('/work', {
+			templateUrl : 'partials/work.html',
+			controller : 'WorkCtrl'
+		})
+		.when('/contact', {
+			templateUrl : 'partials/contact.html',
+			controller : 'ContactCtrl'
+		})
+		.otherwise( { redirectTo : '/' } )
 })
 
-$('.workLink').click(function(e) {
-	e.preventDefault()
-	window.open(this.href)
-})
 
-$('#about').hide();
-$('#music').hide();
-$('#work').hide();
-$('#contact').hide();
+// function hideAll (view) {
+// 	$('#about').hide();
+// 	$('#music').hide();
+// 	$('#work').hide();
+// 	$('#contact').hide();
+// 	$('#front').hide();
+// 	$(view).show();
+// };
 
-$('a').click(function(e) {
-	if (e.target.classList[2] === 'links') {
-		e.preventDefault();
-		$(this).addClass('selected');
-		$(this).siblings().removeClass('selected');
-	}
-});
+// $.ajax({
+// 	url: 'http://quotes.rest/qod.json?category=inspire'
+// }).done(function(data) {
+// 	console.log(data)
+// 	$('#quote').prepend(data.contents.quotes[0].quote +  '<br> - ' + data.contents.quotes[0].author + '<br>' )
+// })
 
-$('.links').click(function() {
-	if ($(this).hasClass('home') === false) {
-		if ($('.picture').hasClass('zoomOutUp') === false) {
-			$('.picture').addClass('zoomOutUp');
-		setTimeout(function() {
-			$('.pic-container').hide('slow');
-		}, 1000)
-		}
-	} else {
-		$('.pic-container').show('slow');
-		$('.picture').removeClass('zoomOutUp');
-		$('.picture').addClass('zoomInDown');
-	}
-})
+// $('.workLink').click(function(e) {
+// 	e.preventDefault()
+// 	window.open(this.href)
+// })
 
-$('.links').mouseover(function(e) {
-	$(this).addClass('pulse');
-});
+// $('#about').hide();
+// $('#music').hide();
+// $('#work').hide();
+// $('#contact').hide();
 
-$('.links').mouseleave(function(e) {
-	$(this).removeClass('pulse');
-});
+// $('a').click(function(e) {
+// 	if (e.target.classList[2] === 'links') {
+// 		e.preventDefault();
+// 		$(this).addClass('selected');
+// 		$(this).siblings().removeClass('selected');
+// 	}
+// });
 
-$('.icons').mouseover(function(e) {
-	$(this).addClass('pulse');
-});
+// $('.links').click(function() {
+// 	if ($(this).hasClass('home') === false) {
+// 		if ($('.picture').hasClass('zoomOutUp') === false) {
+// 			$('.picture').addClass('zoomOutUp');
+// 		setTimeout(function() {
+// 			$('.pic-container').hide('slow');
+// 		}, 1000)
+// 		}
+// 	} else {
+// 		$('.pic-container').show('slow');
+// 		$('.picture').removeClass('zoomOutUp');
+// 		$('.picture').addClass('zoomInDown');
+// 	}
+// })
 
-$('.icons').mouseleave(function(e) {
-	$(this).removeClass('pulse');
-});
+// $('.links').mouseover(function(e) {
+// 	$(this).addClass('pulse');
+// });
 
-$('.home').click(function() {
-	hideAll($('#front'));
-});
+// $('.links').mouseleave(function(e) {
+// 	$(this).removeClass('pulse');
+// });
 
-$('.about').click(function() {
-	hideAll($('#about'));
-});
+// $('.icons').mouseover(function(e) {
+// 	$(this).addClass('pulse');
+// });
 
-$('.work').click(function() {
-	hideAll($('#work'));
-});
+// $('.icons').mouseleave(function(e) {
+// 	$(this).removeClass('pulse');
+// });
 
-$('.contact').click(function() {
-	hideAll($('#contact'));
-});
+// $('.home').click(function() {
+// 	hideAll($('#front'));
+// });
+
+// $('.about').click(function() {
+// 	hideAll($('#about'));
+// });
+
+// $('.work').click(function() {
+// 	hideAll($('#work'));
+// });
+
+// $('.contact').click(function() {
+// 	hideAll($('#contact'));
+// });
