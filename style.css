@@ -157,6 +157,11 @@ a.darken:hover img {
 	font-size: 34px;
 }
 
+.workheaderbandP {
+  font-family: 'Monofett', cursive;
+  font-size: 54px;
+}
+
 .bandmates {
   font-size: 20px;
 }
@@ -164,6 +169,12 @@ a.darken:hover img {
 .workheaderrobot {
 	font-family: 'Orbitron', sans-serif;
 	text-shadow: 5px 5px 10px rgba(0,0,0, .5)
+}
+
+.workheaderrobotP {
+  font-family: 'Orbitron', sans-serif;
+  text-shadow: 5px 5px 10px rgba(0,0,0, .5);
+  font-size: 44px;
 }
 
 .node {
