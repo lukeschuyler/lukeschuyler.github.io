@@ -6,7 +6,7 @@ mySite.config(function($routeProvider, $locationProvider) {
 	$routeProvider
 		.when('/', {
 			templateUrl : 'partials/home.html',
-			controller : 'HomeCtrl'
+			controller : 'WorkCtrl'
 		})
 		.when('/work', {
 			templateUrl : 'partials/work.html',
@@ -14,7 +14,7 @@ mySite.config(function($routeProvider, $locationProvider) {
 		})
 		.when('/contact', {
 			templateUrl : 'partials/contact.html',
-			controller : 'ContactCtrl'
+			controller : 'WorkCtrl'
 		})
 		.when('/work/:project', {
 			templateUrl : 'partials/project.html',
