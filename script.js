@@ -12,12 +12,12 @@ mySite.config(function($routeProvider, $locationProvider) {
 			templateUrl : 'partials/work.html',
 			controller : 'WorkCtrl'
 		})
-		.when('/contact', {
-			templateUrl : 'partials/contact.html',
-			controller : 'WorkCtrl'
-		})
 		.when('/work/:project', {
 			templateUrl : 'partials/project.html',
+			controller : 'WorkCtrl'
+		})
+		.when('/technologies', {
+			templateUrl : 'partials/tech.html',
 			controller : 'WorkCtrl'
 		})
 		.otherwise( { redirectTo : '/' } )
