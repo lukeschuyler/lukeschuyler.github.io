@@ -1,4 +1,4 @@
-const mySite = angular.module('mySite', ['ngRoute'])
+const mySite = angular.module('mySite', ['ngRoute', '720kb.tooltips'])
 
 mySite.config(function($routeProvider, $locationProvider) {
 	$locationProvider.hashPrefix('');
