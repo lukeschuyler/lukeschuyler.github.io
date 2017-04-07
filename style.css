@@ -110,6 +110,10 @@ a:hover: {
     margin-right: 4%;
 }
 
+#content {
+  background-color: rgba(0,0,0,.3);
+}
+
 #star {
 	height: 30px;
 	width: 30px;
