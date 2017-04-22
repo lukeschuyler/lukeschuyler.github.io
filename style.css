@@ -10,8 +10,12 @@ body {
     font-family: 'Quattrocento Sans', sans-serif;
 }
 
-#center {
+.center {
 	text-align: center;
+}
+
+.indent {
+  margin-left: 3%;
 }
 
 #work {
@@ -21,11 +25,16 @@ body {
 
 .picture {
 	/*margin-left: 30%;*/
+  margin-left: 0 !important;
 	margin-bottom: 3%;
 	border-radius: 100%;
 	height: 120px;
 	width: 120px;
 	background: center/cover no-repeat
+}
+
+.img-cont {
+    padding-left: 0 !important;
 }
 
 .main {
@@ -63,7 +72,8 @@ body {
 
 .stuff {
   margin-top: 3%;
-  margin-left: 25%;
+  margin-left: 30%;
+  padding-right: 0 !important;
 }
 
 .under-name {
@@ -87,11 +97,12 @@ a:hover: {
 }
 
 .aboutDiv {
-    padding-bottom: 40px;
-    padding-top: 40px;
-		line-height: 30px;
-		background: linear-gradient(rgba(255,255,255, .7), rgba(255,255,255, .7));
-		border-radius: 10px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+	line-height: 30px;
+	background: linear-gradient(rgba(255,255,255, .7), rgba(255,255,255, .7));
+	border-radius: 10px;
+  font-size: 15px;
 }
 
 #content div div > p {
@@ -100,7 +111,6 @@ a:hover: {
 	padding: 7%;
 	line-height: 30px;
 	border-radius: 25px;
-	text-align: justify;
 	color: #FFF;
 }
 
@@ -190,19 +200,22 @@ a.darken:hover img {
 }
 
 .tech-img {
-  height: 70%;
-  width:auto;
+  height: 80%;
+  width: 80%;
   padding-bottom: 10%;
 }
 
 .work-header {
-  font-size: 50px;
-  text-decoration: underline; 
+  font-size: 40px;
 }
 
 .technologies--content {
   padding-top: 2%;
   padding-bottom: 5%;
+}
+
+.github {
+  font-size: 20px;
 }
 
 .starWars {
