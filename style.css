@@ -205,6 +205,15 @@ a.darken:hover img {
   padding-bottom: 10%;
 }
 
+.tech-img-big {
+  height: 30%;
+  width: 30%;
+}
+
+/*.big > .tooltips ._steady ._ready .active {
+  margin-right: 30%;
+}*/
+
 .work-header {
   font-size: 40px;
 }
