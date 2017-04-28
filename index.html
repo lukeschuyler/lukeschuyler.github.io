@@ -4,34 +4,36 @@
 	<title>Luke Schuyler</title>
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="/bower_components/angular-tooltips/dist/angular-tooltips.min.css">
+		<!-- <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css"> -->
+		<link rel="stylesheet" type="text/css" href="bower_components/angular-tooltips/dist/angular-tooltips.min.css">
 		<link rel="stylesheet" type="text/css" href="style.css">	
-		<link href="https://fonts.googleapis.com/css?family=Audiowide|Cedarville+Cursive|Julius+Sans+One|Patrick+Hand|Quattrocento+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Audiowide|Cedarville+Cursive|Julius+Sans+One|Patrick+Hand|Quattrocento+Sans|Nosifer" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Monofett|Orbitron" rel="stylesheet">
 </head>
 
 <body>
 
-	<div id="center">
+	<div>
 		<div class="main">
 			<div class="header">
-				<div class="pic-container row">
-					<div class="animated picture col-md-3 col-md-offset-5">
-						<img ng-class="{zoomInLeft: home == true, zoomOutLeft: home == false }" class="animated picture" src="images/prof_pic.jpg">
+				<div class="pic-container center" row">
+					<div class="name">
+						<div class="stuff col-xs-3 col-xs-offset-5">
+							Luke Schuyler
+							<div class="under-name">
+								<div>
+									<span id="web">> Web Developer |</span>
+									<span id="musician"> Musician |</span>
+									<span id="thinker"> Thinker <</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="img-cont col-xs-1">
+						<img class="animated picture" src="images/prof_pic.jpg">
 					</div>
 				</div>
-				<div class="name row">
-					<div class="col-md-8 col-md-offset-2 col-md-8 col-md-offset-2 col-md-8 col-md-offset-2">
-						Luke Schuyler
-					</div>
-				</div>
-				<div class="under-name row">
-					<div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
-						<span id="web">> Web Developer |</span>
-						<span id="musician"> Musician |</span>
-						<span id="thinker"> Thinker <</span>
-					</div>
-				</div>
+
 				<div class="row">
 					<div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-6 col-xs-offset-3">
 						<ul class="navbar" id="mynavs">
