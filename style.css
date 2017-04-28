@@ -238,6 +238,43 @@ a.darken:hover img {
   padding-bottom: 5%;
 }
 
+.technologies {
+  text-align: center;
+}
+
+.technologies > h1 {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: bold;
+}
+
+
+.tech-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.tech-img {
+  height: 150px;
+  width: auto;
+  padding-bottom: 10%;
+  padding: 30px;
+  border-radius: 30%;
+}
+
+.bs-knex {
+    border-radius: 100%;
+}
+
+.web {
+  border-radius: 0;
+}
+
+.collab {
+  font-size: 25px;
+}
+
 .github {
   font-size: 20px;
 }
