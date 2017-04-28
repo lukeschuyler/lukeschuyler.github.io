@@ -195,6 +195,24 @@ a.darken:hover img {
   font-size: 44px;
 }
 
+.workheadertic {
+  font-family: 'Nosifer', cursive;
+  text-shadow: 5px 5px 10px rgba(0,0,0, .5);
+  font-size: 44px;
+  color: darkred;
+}
+
+.workheaderticP {
+  font-family: 'Nosifer', cursive;
+  text-shadow: 5px 5px 10px rgba(0,0,0, .5);
+  font-size: 44px;
+  color: darkred;
+}
+
+.rowtwowork {
+  margin-top: 2%;
+}
+
 .node {
   margin-top: 10%;
 }
@@ -210,9 +228,6 @@ a.darken:hover img {
   width: 30%;
 }
 
-/*.big > .tooltips ._steady ._ready .active {
-  margin-right: 30%;
-}*/
 
 .work-header {
   font-size: 40px;
