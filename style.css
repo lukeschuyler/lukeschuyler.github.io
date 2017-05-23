@@ -138,6 +138,7 @@ a.darken {
     display: inline-block;
     background: black;
     padding: 0;
+    border-radius: 10px;
 }
 
 a.darken img {
@@ -197,7 +198,7 @@ a.darken:hover img {
 .workheadertic {
   font-family: 'Nosifer', cursive;
   text-shadow: 5px 5px 10px rgba(0,0,0, .5);
-  font-size: 44px;
+  font-size: 24px;
   color: darkred;
 }
 
